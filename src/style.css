@@ -10,6 +10,11 @@ body {
   background-image: url("https://source.unsplash.com/1600x900/?landscape");
 }
 
+p,
+h1 {
+  margin: 0;
+}
+
 .card {
   width: 100%; /* responsivity */
   max-width: 420px;
@@ -49,7 +54,7 @@ button.search-icon {
   color: white;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  display: flex;  /* center search icon */
+  display: flex; /* center search icon */
   align-items: center;
   justify-content: center;
 }
@@ -61,12 +66,31 @@ button.search-icon:hover {
 .city {
   font-size: 1.5em;
   font-weight: bolder;
-  margin: 0.5em 0em 0.5em 0em;
+  margin-top: 0.75em;
 }
 
 .temp {
   font-size: 2em;
   font-weight: bolder;
-  margin: 0.5em 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+
+.humidity {
+  text-transform: capitalize;
+  margin-bottom: .5em;
+}
+
+.wind-speed {
+  text-transform: capitalize;
+}

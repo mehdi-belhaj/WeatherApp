@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
     <!-- StyleSheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="card">
       <div class="search">
-        <input type="text" class="search-bar" placeholder="Type the name of a city ..."/>
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Type the name of a city ..."
+        />
         <button class="search-icon">
           <svg
             stroke="currentColor"
@@ -35,13 +42,22 @@
         </button>
       </div>
       <div class="weather">
-        <div class="city">Weather in Casablanca</div>
-        <div class="temp">25 °C</div>
-        <img class="weather-icon" src="" alt="weather-icon" />
-        <div class="description">Sunny</div>
-        <div class="humidity">humidity: 60%</div>
-        <div class="wind">Wind speed: 5.2 km/h</div>
+        <h1 class="city">Weather in Casablanca</h1>
+        <p class="temp">25 °C</p>
+        <div class="flex">
+          <img
+            class="weather-icon"
+            src="https://openweathermap.org/img/wn/04n.png"
+            alt="weather-icon"
+          />
+          <p class="description">
+            Sunny Sunny
+          </p>
+        </div>
+        <p class="humidity">humidity: 60%</p>
+        <p class="wind-speed">Wind speed: 5.2 km/h</p>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
