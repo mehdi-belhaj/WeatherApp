@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 110%;
+  background: #222; /* Default background */
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+}
+
+.card {
+  width: 100%; /* responsivity */
+  max-width: 420px;
+  padding: 2em;
+  margin: 1em;
+  color: white;
+  border-radius: 15px;
+  background: #000000d0;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input.search-bar {
+  outline: none;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 4.5em);
+}
+
+button.search-icon {
+  height: 3.4em;
+  width: 3.4em;
+  margin-left: 0.75em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  display: flex;  /* center search icon */
+  align-items: center;
+  justify-content: center;
+}
+
+button.search-icon:hover {
+  background: #7c7c7c6b;
+}
+
+.city {
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin: 0.5em 0em 0.5em 0em;
+}
+
+.temp {
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 0.5em 0;
+}
+
