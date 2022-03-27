@@ -92,10 +92,24 @@ button.search-icon:hover {
 }
 
 .humidity {
-  text-transform: capitalize;
   margin-bottom: .5em;
 }
 
-.wind-speed {
-  text-transform: capitalize;
+/* .wind-speed {
+
+} */
+
+.weather.loading {
+  height: 20px;
+  visibility: hidden;
+  position: relative;
+}
+
+.weather.loading:after {
+  content: 'Loading ...';
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 110%;
 }

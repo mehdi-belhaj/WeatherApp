@@ -29,12 +29,19 @@ let weather = {
       "humidity: " + humidity + "%";
     document.querySelector(".wind-speed").innerText =
       "Wind speed: " + speed + " km/h";
+    document.body.style.backgroundImage =
+      "url('https://source.unsplash.com/1600x900/?" + name + "')";
+    document.querySelector(".weather").classList.remove("loading")
   },
   search: function () {
+    document.querySelector(".weather").classList.add("loading")
     const city = document.querySelector("#search-input").value;
     this.fetchWeather(city);
   },
 };
+
+/* Clear search input */
+// document.querySelector("#search-input").value = '';
 
 /* input keyUup `Enter` event */
 document
@@ -46,11 +53,9 @@ document
   });
 
 /* button click event */
-document
-  .querySelector("#search-btn")
-  .addEventListener("click", function () {
-    weather.search();
-  });
+document.querySelector("#search-btn").addEventListener("click", function () {
+  weather.search();
+});
 
 /* Default city loaded in the frist time. (will be replaced by user location) */
-weather.fetchWeather("Fes")
+weather.fetchWeather("Fes");
