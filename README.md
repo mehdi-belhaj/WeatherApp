@@ -2,7 +2,7 @@
 
 This is a simple weather app created using HTML, CSS and JavaScript.
 
-![Screen of the app view](./assets/placeholder_360x240.png  "App view.")
+![Screen of the app view](./assets/weather-app-screen.png  "App view.")
 
 In this mini-app i used:
 - **CSS**: `flexbox` to create a responsive, centered card.
