@@ -19,13 +19,15 @@
   </head>
   <body>
     <div class="card">
+      <!-- <div class="time">23:12</div> -->
       <div class="search">
         <input
           type="text"
+          id="search-input"
           class="search-bar"
           placeholder="Type the name of a city ..."
         />
-        <button class="search-icon">
+        <button class="search-icon" id="search-btn">
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -58,6 +60,6 @@
         <p class="wind-speed">Wind speed: 5.2 km/h</p>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </body>
 </html>

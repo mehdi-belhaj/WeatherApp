@@ -81,9 +81,14 @@ button.search-icon:hover {
   align-items: center;
 }
 
+.weather-icon {
+  margin-left: -0.45em;
+}
+
 .description {
   text-transform: capitalize;
   font-size: 1.2em;
+  margin-left: 0.2em;
 }
 
 .humidity {

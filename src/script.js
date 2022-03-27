@@ -30,4 +30,27 @@ let weather = {
     document.querySelector(".wind-speed").innerText =
       "Wind speed: " + speed + " km/h";
   },
+  search: function () {
+    const city = document.querySelector("#search-input").value;
+    this.fetchWeather(city);
+  },
 };
+
+/* input keyUup `Enter` event */
+document
+  .querySelector("#search-input")
+  .addEventListener("keyup", function (event) {
+    if (event.key == "Enter") {
+      weather.search();
+    }
+  });
+
+/* button click event */
+document
+  .querySelector("#search-btn")
+  .addEventListener("click", function () {
+    weather.search();
+  });
+
+/* Default city loaded in the frist time. (will be replaced by user location) */
+weather.fetchWeather("Fes")

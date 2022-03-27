@@ -14,5 +14,6 @@ In this mini-app i used:
 
 New feature :
 - :sparkles: Add Initial Location (city of the current user).
+- :sparkles: Add Current time (based on user time zone).
 - :sparkles: Add Unit (F/C).
 - :sparkles: Add Translation (Fr & Ar).
