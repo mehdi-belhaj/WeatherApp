@@ -17,7 +17,7 @@ You can try this app by visiting the following link:
 [https://mehdi-belhaj.github.io/weather-app/src/](https://mehdi-belhaj.github.io/weather-app/src/)
 
 ### New feature Comming:
-- :sparkles:: Add Initial Location (city of the current user).
-- :sparkles:: Add Current time (based on user time zone).
-- :sparkles:: Add Unit (F/C).
-- :sparkles:: Add Translation (Fr & Ar).
+- [ ] Initial Location (city of the current user).
+- [ ] Current time (based on user time zone).
+- [ ] Change unit (F/C).
+- [ ] Translation (Fr & Ar).
